@@ -1,0 +1,7 @@
+context_level,compilation_rate,accuracy,bug_detection_rate,false_positive_rate
+L1,74.87,74.33,74.87,0.0
+L2,75.14,75.14,75.14,0.0
+L3,74.59,74.59,74.59,0.0
+L4,74.59,74.59,74.59,0.0
+L5,76.57,76.57,76.57,0.0
+L6,76.27,76.27,76.27,0.0

@@ -1,0 +1,87 @@
+id,bug_id,context_level,run_number,compiled,catches_bug,passes_fixed,accurate,false_positive,false_negative,generated_oracle,timestamp
+1,gson_1,L1,1,1,1,0,0,0,1,"```java
+assertFalse(excluder.excludeClass(MockObject.class, true));
+assertFalse(excluder.excludeField(MockObject.class.getDeclaredField(""someField""), true));
+assertTrue(excluder.excludeClass(MockObject.class, true));
+assertTrue(excluder.excludeField(MockObject.class.getDeclaredField(""someField""), true));
+assertFalse(excluder.excludeClass(MockObject.class, true));
+assertFalse(excluder.excludeField(MockObject.class.getDeclaredField(""someField""), true));
+```",2026-06-10T23:03:01.003476
+2,gson_1,L1,1,1,1,1,1,0,0,"```java
+assertFalse(excluder.excludeClass(MockObject.class, true));
+assertFalse(excluder.excludeField(MockObject.class.getField(""someField""), true));
+assertTrue(excluder.excludeClass(MockObject.class, true));
+assertTrue(excluder.excludeField(MockObject.class.getField(""someField""), true));
+assertFalse(excluder.excludeClass(MockObject.class, true));
+assertFalse(excluder.excludeField(MockObject.class.getField(""someField""), true));
+```",2026-06-11T12:03:44.616031
+3,gson_1,L1,2,1,1,1,1,0,0,"```java
+assertFalse(excluder.excludeClass(MockObject.class, true));
+assertFalse(excluder.excludeField(MockObject.class.getDeclaredField(""someField""), true));
+assertTrue(excluder.excludeClass(MockObject.class, true));
+assertTrue(excluder.excludeField(MockObject.class.getDeclaredField(""someField""), true));
+assertFalse(excluder.excludeClass(MockObject.class, true));
+assertFalse(excluder.excludeField(MockObject.class.getDeclaredField(""someField""), true));
+```",2026-06-11T12:06:52.380936
+4,gson_1,L1,3,1,1,1,1,0,0,"```java
+assertFalse(excluder.excludeClass(MockObject.class, true));
+assertFalse(excluder.excludeField(MockObject.class.getDeclaredField(""someField""), true));
+assertTrue(excluder.excludeClass(MockObject.class, true));
+assertTrue(excluder.excludeField(MockObject.class.getDeclaredField(""someField""), true));
+assertFalse(excluder.excludeClass(MockObject.class, true));
+assertFalse(excluder.excludeField(MockObject.class.getDeclaredField(""someField""), true));
+```",2026-06-11T12:09:52.230733
+5,gson_1,L1,4,1,1,1,1,0,0,"```java
+assertFalse(excluder.excludeClass(MockObject.class, true));
+assertFalse(excluder.excludeField(MockObject.class.getDeclaredField(""someField""), true));
+assertTrue(excluder.excludeClass(MockObject.class, true));
+assertTrue(excluder.excludeField(MockObject.class.getDeclaredField(""someField""), true));
+assertFalse(excluder.excludeClass(MockObject.class, true));
+assertFalse(excluder.excludeField(MockObject.class.getDeclaredField(""someField""), true));
+```",2026-06-11T12:12:50.189688
+6,gson_1,L1,5,1,1,1,1,0,0,"```java
+assertFalse(excluder.excludeClass(MockObject.class, true));
+assertFalse(excluder.excludeField(MockObject.class.getDeclaredField(""someField""), true));
+```
+
+```java
+assertTrue(excluder.excludeClass(MockObject.class, true));
+assertTrue(excluder.excludeField(MockObject.class.getDeclaredField(""someField""), true));
+```
+
+```java
+assertFalse(excluder.excludeClass(MockObject.class, true));
+assertFalse(excluder.excludeField(MockObject.class.getDeclaredField(""someField""), true));
+```",2026-06-11T12:15:54.727216
+7,gson_1,L2,1,1,1,1,1,0,0,"```java
+assertFalse(excluder.excludeClass(MockObject.class, true));
+assertFalse(excluder.excludeField(MockObject.class.getDeclaredField(""someField""), true));
+assertTrue(excluder.excludeClass(MockObject.class, true));
+assertTrue(excluder.excludeField(MockObject.class.getDeclaredField(""someField""), true));
+assertTrue(excluder.excludeClass(MockObject.class, true));
+assertTrue(excluder.excludeField(MockObject.class.getDeclaredField(""someField""), true));
+```",2026-06-11T12:19:20.123518
+8,gson_1,L2,2,1,1,1,1,0,0,"```java
+assertFalse(excluder.excludeClass(MockObject.class, true));
+assertFalse(excluder.excludeField(MockObject.class.getDeclaredField(""someField""), true));
+assertFalse(excluder.excludeClass(MockObject.class, true));
+assertFalse(excluder.excludeField(MockObject.class.getDeclaredField(""someField""), true));
+assertTrue(excluder.excludeClass(MockObject.class, true));
+assertTrue(excluder.excludeField(MockObject.class.getDeclaredField(""someField""), true));
+```",2026-06-11T12:22:20.848891
+9,gson_1,L2,3,1,1,1,1,0,0,"```java
+assertFalse(excluder.excludeClass(MockObject.class, true));
+assertFalse(excluder.excludeField(MockObject.class.getDeclaredField(""someField""), true));
+assertTrue(excluder.excludeClass(MockObject.class, true));
+assertTrue(excluder.excludeField(MockObject.class.getDeclaredField(""someField""), true));
+assertTrue(excluder.excludeClass(MockObject.class, true));
+assertTrue(excluder.excludeField(MockObject.class.getDeclaredField(""someField""), true));
+```",2026-06-11T12:25:18.594387
+10,gson_1,L2,4,1,1,1,1,0,0,"```java
+assertFalse(excluder.excludeClass(MockObject.class, true));
+assertFalse(excluder.excludeField(MockObject.class.getDeclaredField(""someField""), true));
+assertTrue(excluder.excludeClass(MockObject.class, true));
+assertTrue(excluder.excludeField(MockObject.class.getDeclaredField(""someField""), true));
+assertTrue(excluder.excludeClass(MockObject.class, true));
+assertTrue(excluder.excludeField(MockObject.class.getDeclaredField(""someField""), true));
+```",2026-06-11T12:28:19.333265
