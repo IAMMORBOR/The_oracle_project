@@ -125,8 +125,7 @@ class ContextExtractor:
     from the GHRB dataset using Docker.
 
     Instead of reading files directly, it runs
-    Docker commands to get the code — exactly
-    like you did manually in the terminal.
+    Docker commands to get the code.
     """
 
     def __init__(self, bug):
@@ -151,7 +150,7 @@ class ContextExtractor:
         return result.stdout + result.stderr
 
     def _checkout_buggy(self):
-        """Checkout the buggy version so we can read the files"""
+        """Checkout the buggy version to read the files"""
         version_id = f"{self.bug_number}b"
         command = (
             f"cd /root/framework && "
